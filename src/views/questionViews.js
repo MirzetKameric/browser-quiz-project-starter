@@ -65,11 +65,3 @@ export const createNextQuestionButtonElement = () => {
   buttonElement.setAttribute('class', 'button-element');
   return buttonElement;
 };
-
-//create timer element
-// export const createTimerElement = () => {
-//   const paragraphElement = createDOMElement('p', {
-//     id: timer,
-//   });
-//   return paragraphElement;
-// };
