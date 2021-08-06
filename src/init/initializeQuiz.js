@@ -19,13 +19,9 @@ const setupQuizHTML = () => {
   const questionContainer = createDOMElement('div', {
     id: QUESTION_CONTAINER_ID,
   });
-
   quizContainer.appendChild(questionContainer);
-
   const nextQuestionButton = createNextQuestionButtonElement();
   quizContainer.appendChild(nextQuestionButton);
-
-  console.log(quizContainer);
   userInterfaceContainer.appendChild(quizContainer);
 };
 
