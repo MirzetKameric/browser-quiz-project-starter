@@ -4,7 +4,6 @@ import { NEXT_QUESTION_BUTTON_ID } from '../constants.js';
 import { nextQuestion } from '../listeners/questionListeners.js';
 import { createDOMElement } from '../utils/DOMUtils.js';
 import { checkAnswer } from '../listeners/questionListeners.js';
-import { startTimer } from '../listeners/questionListeners.js';
 
 /**
  * Create an Answer element
@@ -38,16 +37,7 @@ export const createQuestionElement = (question) => {
     const answer = createAnswerElement(question.answers[answerKey], answerKey);
     answerContainer.appendChild(answer);
   }
-<<<<<<< HEAD
-=======
-  //create timer element
 
-  const paragraphElement = createDOMElement('p');
-  paragraphElement.setAttribute('id', 'timer');
-  paragraphElement.text = startTimer();
-  container.appendChild(paragraphElement);
-  ///end timer element
->>>>>>> 409e8dc658db790e4d3385fc9f5a9fe01ecfade5
   container.appendChild(answerContainer);
   return container;
 };

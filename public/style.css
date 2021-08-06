@@ -9,12 +9,9 @@
   --correct: rgb(92, 253, 92);
   --fault: rgb(255, 59, 59);
   --purple: #26003d;
-<<<<<<< HEAD
   --grey: #9999;
   --white: #eee;
   --yellow: #f1ff5c;
-=======
->>>>>>> 409e8dc658db790e4d3385fc9f5a9fe01ecfade5
 }
 
 body {
@@ -155,12 +152,4 @@ body {
   box-shadow: none;
   transform: none;
   border-color: var(--grey);
-}
-#timer {
-  position: absolute;
-  right: 2%;
-  top: 2%;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  color: whitesmoke;
 }
