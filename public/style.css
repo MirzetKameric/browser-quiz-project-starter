@@ -10,7 +10,7 @@
   --fault: rgb(255, 59, 59);
 }
 body {
-  background-color: #151b29;
+  background-color: var(--purple);
 }
 .centered {
   display: flex;
@@ -28,6 +28,7 @@ body {
   border: 1px solid #ccc;
   position: relative;
   box-shadow: 0 0.1em 1em -0.1em whitesmoke;
+  position: relative;
 }
 
 .content-question h1 {
@@ -127,6 +128,14 @@ body {
   left: 2%;
   top: 2%;
   font-size: 1rem;
+  font-weight: bolder;
+  color: whitesmoke;
+}
+#timer {
+  position: absolute;
+  right: 2%;
+  top: 2%;
+  font-size: 1.5rem;
   font-weight: bolder;
   color: whitesmoke;
 }
