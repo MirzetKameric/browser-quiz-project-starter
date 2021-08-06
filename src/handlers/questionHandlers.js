@@ -41,12 +41,14 @@ export const handleAnswerCheck = (event) => {
   });
 
   if (elementAnswer === currentQuestion.correct) {
+    elementChosenAnswer.style.pointerEvents = 'none';
     elementChosenAnswer.classList.add('correctAnswer');
     score++;
     document.querySelector(
       '.score'
     ).textContent = `Correct Answers ${score} / ${quizData.questions.length} `;
   } else {
+    elementChosenAnswer.style.pointerEvents = 'none';
     const rightAnswerElement = document.querySelector(
       `[data-value=${rightAnswer}]`
     );
@@ -55,4 +57,24 @@ export const handleAnswerCheck = (event) => {
   }
 };
 
+<<<<<<< HEAD
 countDownTimer();
+=======
+export const countDownTimer = () => {
+  const startingMinutes = 10;
+  let time = startingMinutes * 60;
+  const countdownEl = document.getElementById('timer');
+  const timeOver = setInterval(updateCountDown, 1000);
+  function updateCountDown() {
+    const minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    if (time <= 0) {
+      clearInterval(timeOver);
+    }
+    countdownEl.textContent = ` ${minutes} : ${seconds}`;
+    time--;
+  }
+};
+// countDownTimer();
+>>>>>>> 409e8dc658db790e4d3385fc9f5a9fe01ecfade5
